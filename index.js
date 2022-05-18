@@ -27,6 +27,8 @@ async function run() {
 
     const todoColection = client.db("todo").collection("Alltodo");
 
+    // <<===all Todo===>
+
     app.get("/todo", async (req, res) => {
       const query = {};
       const cursor = todoColection.find(query);
